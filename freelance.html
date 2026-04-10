@@ -6,6 +6,7 @@
     <title>Freelances - AfriTalent</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,23 +28,179 @@
         </nav>
     </header>
 
-     <main>
+    <main class="container py-5">
         <section class="container py-5">
-            <h1>Nos meilleures Freelances</h1>
-            <p>Découvrez les Talents prèts à transformer vos projets.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="..//Hikmath-FASSASSI-AfriTalent/images/istockphoto-1325315050-612x612.jpg" alt="Avatar" class="rounded-circle">
-                    <h3>Kola Adé</h3>
-                    <p>Développeur Fullstack exp&rimenté (Sénégal).</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="..//Hikmath-FASSASSI-AfriTalent/images/istockphoto-1331335251-612x612.jpg" alt="Avatar" class="rounded-circle">
-                    <h3>Aisha Sow</h3>
-                    <p>Designer UI/UX créative et passionnée (cote d'ivoire).</p>
+            <h1 class="mb-4">Nos meilleurs Freelances</h1>
+            <p>Découvrez les talents prets à transformer vos projets.</p>
+
+            <div class="row mb-5">
+               <div class="col-md-4">
+                   <label for="filter" class="form-label">Filtrer par expertise</label>
+                   <select class="form-select" id="filter">
+                        <option selected>Toutes les catégories</option>
+                        <option value="1">Développement web</option>
+                        <option value="2">Design UI/UX</option>
+                        <option value="3">Marketing Digital</option>
+                    </select>
                 </div>
             </div>
-     </main>
+
+            <div class="row">
+               <div class="col-12 col-md-6 col-lg-4 mb-4"></div>
+            </div>
+        </section>
+    
+        <section class="container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <div class="card h-100 text-center p-3">
+                        <img src=".//images/pexels-naboth-otieno-83498565-19805885.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Kola">
+                        <div class="card-body">
+                            <h5>Kola Adé</h5>
+                            <p class="text-muted">Développeur Fullstack</p>
+                            <p>Expert en React et Node.js (Sénégal).</p>
+                            <p class="fw-bold">25 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div> 
+                </div>
+            
+                          
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-1494345425-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Aisha">
+                        <div class="card-body">
+                            <h5>Aisha Sow</h5>
+                            <p class="text-muted">Designer UI/UX</p>
+                            <p>Création d'interfaces mobiles élégantes (Cote d'ivoire).</p>
+                            <p class="fw-bold">20 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-1407094583-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Marc">
+                        <div class="card-body">
+                            <h5>Marc Mensah</h5>
+                            <p class="text-muted">Expert Marketing</p>
+                            <p>Spécialiste SEO et publicité Facebook (Ghana).</p>
+                            <p class="fw-bold">25 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-2262122258-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Fatou">
+                        <div class="card-body">
+                            <h5>Fatou Diop</h5>
+                            <p class="text-muted">Data Scientist</p>
+                            <p>Analyse de données et IA avec Python (Sénégal).</p>
+                            <p class="fw-bold">30 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-2163621538-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Jean">
+                        <div class="card-body">
+                            <h5>Jean Bakari</h5>
+                            <p class="text-muted">DevOps Engineer</p>
+                            <p>Expert Cloud AWS et Docker (Cameroun).</p>
+                            <p class="fw-bold">25 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-1431126946-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Léa">
+                        <div class="card-body">
+                            <h5>Léa Traoré</h5>
+                            <p class="text-muted">Rédactrice Tech</p>
+                            <p>Redaction de documentations et blogs techniques (Mali).</p>
+                            <p class="fw-bold">20 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-1226252839-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Omar">
+                         <div class="card-body">
+                            <h5>Omar Sylla</h5>
+                            <p class="text-muted">Développeur Mobile</p>
+                            <p>Expert Flutter et iOS/Android (Guinée).</p>
+                            <p class="fw-bold">35 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src=".//images/istockphoto-2148129653-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Sandra">
+                        <div class="card-body">
+                            <h5>Sandra Koffi</h5>
+                            <p class="text-muted">Community Manager</p>
+                            <p>Gestion de réseaux sociaux pour startups (Togo).</p>
+                            <p class="fw-bold">25 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center p-3">
+                       <img src=".//images/istockphoto-2237433109-612x612.jpg" class="card-img-top rounded-circle mx-auto" style="width: 150px;" alt="Idriss">
+                        <div class="card-body">
+                            <h5>Idriss Diallo</h5>
+                            <p class="text-muted">Expert Cybersécurité</p>
+                            <p>Audit de sécurité et protection réseau (Sénégal).</p>
+                            <p class="fw-bold">25 000 FCFA / jour</p>
+                            <div class="text-warning mb-2">
+                               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="#" class="btn btn-primary">Voir le profil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
 
 
         <footer class="bg-dark text-white py-5">
@@ -73,6 +230,7 @@
                 </div>
             </div>
             <hr>
+            <p>AfriTalent est la première plateforme panfricaine dédiée au travail indépendant.Nous croyons au talent local pour un impact mondial.</p>
             <p class="text-center">&copy; 2026 AfriTalent -Tous drois réservés.</p>
          </div>
      </footer>
