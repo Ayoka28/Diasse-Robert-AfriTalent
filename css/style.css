@@ -56,3 +56,85 @@ h1, h2, h3, h4, h5 {
 .nav-link:hover {
     color: var(--primary-color)
 }
+
+.secion-hero {
+    padding: 100px 0;
+    background: linear-gradient(45deg, var(--white) 50%, var(--light-bg) 50%);
+}
+
+.hero-content {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+ 
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bento-item-large {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bento-item-small {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bento-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.category-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    box-shadow: var(--card-shadow);
+}
+
+.category-card:hover {
+    transform: scale(1.05) rotate(1deg);
+    background-color: var(--light-bg);
+    cursor: pointer;
+}
+
+.category-card i {
+    transition: transform 0.3s;
+}
+
+.category-card:hover i {
+    transform: translate(-5px);
+}
+
+.card-price {
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+.card-price.popular {
+    border-color: var(--secondary-color);
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.carousel-item {
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    padding: 15px;
+}
