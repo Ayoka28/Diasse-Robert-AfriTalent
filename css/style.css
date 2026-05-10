@@ -6,12 +6,13 @@
     --light-color: #f8f9fa;
 
     /* typographie */
-    --title-font: 'Monteserrat', sans-serif;
+    --title-font: 'Montserrat', sans-serif;
     --body-font: 'Roboto', sans-serif;
 
     /* espacements */
-    --section-padding: _80px 0;
+    --section-padding: 80px 0;
     --card-shadow:0 4px 15px rgba(0,0,0,0.1);
+    --border-radius: 12px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5 {
     color: white;
 }
 
-.bento-item-small {
+.bento-item-medium {
     background-color: var(--secondary-color);
     color: white;
 }
@@ -140,14 +141,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Responsive Design */
-@media (max-with: 992px) {
+@media (max-width: 992px) {
     .bento-grid {
         grid-template-columns: 1fr !important;
         grid-auto-rows: auto !important;
         gap: 15px;
     }
 
-    .bento-item-large, .bento-item-small {
+    .bento-item-large, .bento-item-medium {
         grid-column: span 1 !important;
         grid-row: span 1 !important ;
 
@@ -161,7 +162,45 @@ h1 {
     text-align: center !important;
 }
 
-img iframe {
+img, iframe {
     max-width: 100% !important;
     height: auto !important;
+}
+
+iframe {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    width: 100% !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+dark-mode {
+    background-color: #121212; 
+    color: #ffffff;
+}
+
+dark-mode .card, .dark-mode .navbar {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #333;
+}
+
+#theme-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+#backToTop {
+    z-index: 1050;
 }

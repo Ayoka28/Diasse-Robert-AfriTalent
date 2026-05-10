@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
      <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -22,6 +25,11 @@
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Blog</a></li> <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item" ms-lg-3>
+                            <button id="theme-toggle" class="btn btn-outline-secondary rounded-circle p-2" title=""Changer de thème>
+                                <i class="fas fa-moon" id="theme-icon"></i>
+                            </button>
+                        </li>
                     </ul>
                     <a href="#" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
                 </div>
@@ -77,7 +85,7 @@
                 <div>
                     <div>
                         <h3>Nos coordonées</h3>
-                        <p class="mt-4"><i class="fas fa-map-maker-alt text-primary me-2"> Dakar,Medina,Avenue Cheikh Anta Diop</i></p>
+                        <p class="mt-4"><i class="fas fa-map-marker-alt text-primary me-2"> Dakar,Medina,Avenue Cheikh Anta Diop</i></p>
                         <p><i class="fas fa-phone text-primary me-2"></i> +221 76 000 00 00</p>
                         <p><i class="fas fa-envelope text-primary me-2"></i> <a href="mailto:contact@afritalent.com">contact@afritalent.com</a></p>
 
@@ -93,12 +101,10 @@
         </section>
 
         <section class="container-fluid p-0">
-            <div class="ratio ratio-21*9">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61756.170428736106!2d-17.48025384094867!3d14.669520070999765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724ebcf41b5d%3A0x2d84ad82d5bef1a6!2sDakar-Plateau%2C%20Dakar!5e0!3m2!1sen!2ssn!4v1775853733636!5m2!1sen!2ssn" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    width="600" height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            </div>
         </section>
      </main>
 
@@ -144,6 +150,10 @@
 
     
     <script src="js/main.js"></script>
+     <button id="backToTop" class="btn btn-outline-primary position-fixed bottom-0 end-0 m-4 d-none" style="z-index: 1000; border-radius: 50%; width: 50px; height: 50px;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 
 </body>
 </html>
