@@ -204,3 +204,22 @@ dark-mode .card, .dark-mode .navbar {
 #backToTop {
     z-index: 1050;
 }
+
+.fade-in section {
+    opacity:0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    visibility: hidden;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateX(0) !important;
+    visibility: visible;
+}
+
+.counter {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: rgb(242, 184, 68);
+}
